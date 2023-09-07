@@ -94,17 +94,21 @@
 
 .side-bar {
     min-width: 320px;
+    height: 900px;
     display: flex;
     flex-direction: column;
     gap: 25px;
     padding: 50px 40px;
     background-color: rgb(104, 16, 16);
     color: #fff;
+    position: sticky;
+    top: 0;
 }
 
 .side-bar h2 {
     font-size: 2.05rem;
     font-family: 'Roboto', sans-serif;
+    position: sticky;
 }
 
 .side-bar ul {
@@ -142,6 +146,7 @@
     font-family: 'Josefin Sans', sans-serif;
     font-size: 3rem;
     padding-bottom: 20px;
+    padding-top: 25px;
 }
 
 .contenedores-comandos {
@@ -149,7 +154,7 @@
     flex-direction: column;
     gap: 10px;
     padding-right: 100px;
-    margin-bottom: 150px;
+    margin-bottom: 140px;
 }
 
 .contenedores-comandos h3 {
