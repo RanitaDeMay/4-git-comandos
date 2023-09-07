@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Comandos GIT</title>
+</head>
+<body>
+    <div class="header">
+        <h1>Comandos GIT</h1>
+        <ul>
+            <li><a href="">Inicio</a></li>
+            <li><a href="">Comandos</a></li>
+        </ul>
+    </div>
+
+    <div class="banner">
+        <div class="contenedor-banner">
+            <h1>Comandos GIT</h1>
+            <a href="">Explorar</a>
+        </div>
+    </div>
+
+    <div class="contenedor-body">
+        <div class="side-bar">
+            <h2>Navegación</h2>
+            <ul>
+                <li><a href="">Instalación y configuración</a></li>
+                <li><a href="">Obtener y crear proyectos</a></li>
+                <li><a href="">Instantáneas básicas</a></li>
+                <li><a href="">Ramificación y fusión</a></li>
+                <li><a href="">Compartir y actualizar proyectos</a></h1></li>
+                <li><a href="">Inspección y comparación</a></h1></li>
+                <li><a href="">Patching</a></li>
+                <li><a href="">Debugging</a></li>
+            </ul>
+        </div>
+
+        <div class="comandos">
+            <h1>Instalación y configuración</h1>
+            <div class="contenedores-comandos">
+                <h3>config</h3>
+                <p>Obtiene y configura el repositorio o las opciones globales.</p>
+                <div class="bloque-comando">
+                    <h3>git config</h3>
+                </div>
+                <!-- PARAMETROS -->
+                <h4>Parámetros</h4>
+                <table  class="parametros">
+                    <thead>
+                        <tr>
+                            <th>Parámetro</th>
+                            <th>Función</th>
+                            <th>Ejemplo</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>--global</td>
+                            <td>Configuración global de nombre de usuario y dirección de correo electrónico.</td>
+                            <td>git config --global user.email <b>"email@gmail.com"<b></td>
+                        </tr>
+                        <tr>
+                            <td>--add</td>
+                            <td>Agregar una configuración específica para un repositorio</td>
+                            <td>git config --add branch.master.name <b>"main"</b></td>
+                        </tr>
+                        <tr>
+                            <td>--e</td>
+                            <td>Editar la configuración existente</td>
+                            <td>git config --global --edit</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h1>Obtener y crear proyectos</h1>
+            <div class="contenedores-comandos">
+                <h3>init</h3>
+                <p>Crea un repositorio Git vacío o reinicializa uno existente.</p>
+                <div class="bloque-comando">
+                    <h3>git init</h3>
+                </div>
+                <!-- PARAMETROS -->
+                <h4>Parámetros</h4>
+                <table  class="parametros">
+                    <thead>
+                        <tr>
+                            <th>Parámetro</th>
+                            <th>Función</th>
+                            <th>Ejemplo</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>--template</td>
+                            <td>Configuración global de nombre de usuario y dirección de correo electrónico.</td>
+                            <td>git config --global user.email <b>"email@gmail.com"<b></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <hr>
+
+                <h3>clone</h3>
+                <p>​​Clonar un repositorio en un nuevo directorio.</p>
+                <div class="bloque-comando">
+                    <h3>git clone</h3>
+                </div>
+                <!-- PARAMETROS -->
+                <h4>Parámetros</h4>
+                <table  class="parametros">
+                    <thead>
+                        <tr>
+                            <th>Parámetro</th>
+                            <th>Función</th>
+                            <th>Ejemplo</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>--local</td>
+                            <td>Configuración global de nombre de usuario y dirección de correo electrónico.</td>
+                            <td>git config --global user.email <b>"email@gmail.com"<b></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h1>Instantáneas básicas</h1>
+            <div class="contenedores-comandos">
+                <h3>add</h3>
+                <p>agrega el contenido del archivo al índice</p>
+                <div class="bloque-comando">
+                    <h3>git add</h3>
+                </div>
+                <!-- PARAMETROS -->
+                <h4>Parámetros</h4>
+                <table  class="parametros">
+                    <thead>
+                        <tr>
+                            <th>Parámetro</th>
+                            <th>Función</th>
+                            <th>Ejemplo</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>-p</td>
+                            <td>Configuración global de nombre de usuario y dirección de correo electrónico.</td>
+                            <td>git config --global user.email <b>"email@gmail.com"<b></td>
+                        </tr>
+                        <tr>
+                            <td>-n</td>
+                            <td>Configuración global de nombre de usuario y dirección de correo electrónico.</td>
+                            <td>git config --global user.email <b>"email@gmail.com"<b></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <hr>
+
+                <h3>status</h3>
+                <p>muestra el estado del árbol de trabajo</p>
+                <div class="bloque-comando">
+                    <h3>git status</h3>
+                </div>
+                <!-- PARAMETROS -->
+                <h4>Parámetros</h4>
+                <table  class="parametros">
+                    <thead>
+                        <tr>
+                            <th>Parámetro</th>
+                            <th>Función</th>
+                            <th>Ejemplo</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>-s</td>
+                            <td>Configuración global de nombre de usuario y dirección de correo electrónico.</td>
+                            <td>git config --global user.email <b>"email@gmail.com"<b></td>
+                        </tr>
+                        <tr>
+                            <td>-b</td>
+                            <td>Configuración global de nombre de usuario y dirección de correo electrónico.</td>
+                            <td>git config --global user.email <b>"email@gmail.com"<b></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <hr>
+
+                <h3>diff</h3>
+                <p>Muestra cambios entre confirmaciones, confirmaciones y árbol de trabajo, etc.</p>
+                <div class="bloque-comando">
+                    <h3>git diff</h3>
+                </div>
+
+                <hr>
+
+                <h3>commit</h3>
+                <p>Registra los cambios en el repositorio.</p>
+                <div class="bloque-comando">
+                    <h3>git commit</h3>
+                </div>
+                <!-- PARAMETROS -->
+                <h4>Parámetros</h4>
+                <table  class="parametros">
+                    <thead>
+                        <tr>
+                            <th>Parámetro</th>
+                            <th>Función</th>
+                            <th>Ejemplo</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>-a</td>
+                            <td>Configuración global de nombre de usuario y dirección de correo electrónico.</td>
+                            <td>git config --global user.email <b>"email@gmail.com"<b></td>
+                        </tr>
+                        <tr>
+                            <td>-m</td>
+                            <td>Configuración global de nombre de usuario y dirección de correo electrónico.</td>
+                            <td>git config --global user.email <b>"email@gmail.com"<b></td>
+                        </tr>
+                        <tr>
+                            <td>--all</td>
+                            <td>Configuración global de nombre de usuario y dirección de correo electrónico.</td>
+                            <td>git config --global user.email <b>"email@gmail.com"<b></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h1>Ramificación y fusión</h1>
+            <div class="contenedores-comandos">
+                <h3>branch</h3>
+                <p>Listar, crear o eliminar ramas</p>
+                <div class="bloque-comando">
+                    <h3>git branch</h3>
+                </div>
+                <!-- PARAMETROS -->
+                <h4>Parámetros</h4>
+                <table  class="parametros">
+                    <thead>
+                        <tr>
+                            <th>Parámetro</th>
+                            <th>Función</th>
+                            <th>Ejemplo</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>--delete</td>
+                            <td>Configuración global de nombre de usuario y dirección de correo electrónico.</td>
+                            <td>git config --global user.email <b>"email@gmail.com"<b></td>
+                        </tr>
+                        <tr>
+                            <td>--list</td>
+                            <td>Configuración global de nombre de usuario y dirección de correo electrónico.</td>
+                            <td>git config --global user.email <b>"email@gmail.com"<b></td>
+                        </tr>
+                        <tr>
+                            <td>--copy</td>
+                            <td>Configuración global de nombre de usuario y dirección de correo electrónico.</td>
+                            <td>git config --global user.email <b>"email@gmail.com"<b></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <hr>
+
+                <h3>checkout</h3>
+                <p>Cambia de rama o restaura archivos de árbol en funcionamiento</p>
+                <div class="bloque-comando">
+                    <h3>git checkout</h3>
+                </div>
+                <!-- PARAMETROS -->
+                <h4>Parámetros</h4>
+                <table  class="parametros">
+                    <thead>
+                        <tr>
+                            <th>Parámetro</th>
+                            <th>Función</th>
+                            <th>Ejemplo</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>-b</td>
+                            <td>Configuración global de nombre de usuario y dirección de correo electrónico.</td>
+                            <td>git config --global user.email <b>"email@gmail.com"<b></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <hr>
+
+                <h3>log</h3>
+                <p>Mostrar registros de confirmación</p>
+                <div class="bloque-comando">
+                    <h3>git log</h3>
+                </div>
+                <!-- PARAMETROS -->
+                <h4>Parámetros</h4>
+                <table  class="parametros">
+                    <thead>
+                        <tr>
+                            <th>Parámetro</th>
+                            <th>Función</th>
+                            <th>Ejemplo</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>--no-decorate</td>
+                            <td>Configuración global de nombre de usuario y dirección de correo electrónico.</td>
+                            <td>git config --global user.email <b>"email@gmail.com"<b></td>
+                        </tr>
+                        <tr>
+                            <td>--follow</td>
+                            <td>Configuración global de nombre de usuario y dirección de correo electrónico.</td>
+                            <td>git config --global user.email <b>"email@gmail.com"<b></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <hr>
+
+                <h3>tag</h3>
+                <p>Crea, enumera, elimina o verifica un objeto de etiqueta firmado con GPG</p>
+                <div class="bloque-comando">
+                    <h3>git tag</h3>
+                </div>
+                <!-- PARAMETROS -->
+                <h4>Parámetros</h4>
+                <table  class="parametros">
+                    <thead>
+                        <tr>
+                            <th>Parámetro</th>
+                            <th>Función</th>
+                            <th>Ejemplo</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>-a</td>
+                            <td>Configuración global de nombre de usuario y dirección de correo electrónico.</td>
+                            <td>git config --global user.email <b>"email@gmail.com"<b></td>
+                        </tr>
+                        <tr>
+                            <td>-s</td>
+                            <td>Configuración global de nombre de usuario y dirección de correo electrónico.</td>
+                            <td>git config --global user.email <b>"email@gmail.com"<b></td>
+                        </tr>
+                        <tr>
+                            <td>-d</td>
+                            <td>Configuración global de nombre de usuario y dirección de correo electrónico.</td>
+                            <td>git config --global user.email <b>"email@gmail.com"<b></td>
+                        </tr>
+                        <tr>
+                            <td>-m</td>
+                            <td>Configuración global de nombre de usuario y dirección de correo electrónico.</td>
+                            <td>git config --global user.email <b>"email@gmail.com"<b></td>
+                        </tr>
+                        <tr>
+                            <td>-e</td>
+                            <td>Configuración global de nombre de usuario y dirección de correo electrónico.</td>
+                            <td>git config --global user.email <b>"email@gmail.com"<b></td>
+                        </tr>
+                        <tr>
+                            <td>--list</td>
+                            <td>Configuración global de nombre de usuario y dirección de correo electrónico.</td>
+                            <td>git config --global user.email <b>"email@gmail.com"<b></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h1>Compartir y actualizar proyectos</h1>
+            <div class="contenedores-comandos">
+                <h3>fetch</h3>
+                <p>Descarga objetos y referencias de otro repositorio.</p>
+                <div class="bloque-comando">
+                    <h3>git fetch</h3>
+                </div>
+                <!-- PARAMETROS -->
+                <h4>Parámetros</h4>
+                <table  class="parametros">
+                    <thead>
+                        <tr>
+                            <th>Parámetro</th>
+                            <th>Función</th>
+                            <th>Ejemplo</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>--all</td>
+                            <td>Configuración global de nombre de usuario y dirección de correo electrónico.</td>
+                            <td>git config --global user.email <b>"email@gmail.com"<b></td>
+                        </tr>
+                        <tr>
+                            <td>-keep</td>
+                            <td>Configuración global de nombre de usuario y dirección de correo electrónico.</td>
+                            <td>git config --global user.email <b>"email@gmail.com"<b></td>
+                        </tr>
+                        <tr>
+                            <td>--tags</td>
+                            <td>Configuración global de nombre de usuario y dirección de correo electrónico.</td>
+                            <td>git config --global user.email <b>"email@gmail.com"<b></td>
+                        </tr>
+                        <tr>
+                            <td>--no-tags</td>
+                            <td>Configuración global de nombre de usuario y dirección de correo electrónico.</td>
+                            <td>git config --global user.email <b>"email@gmail.com"<b></td>
+                        </tr>
+                        <tr>
+                            <td>--progress</td>
+                            <td>Configuración global de nombre de usuario y dirección de correo electrónico.</td>
+                            <td>git config --global user.email <b>"email@gmail.com"<b></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <hr>
+
+                <h3>push</h3>
+                <p>Actualiza las referencias remotas junto con los objetos asociados.</p>
+                <div class="bloque-comando">
+                    <h3>git push</h3>
+                </div>
+                <!-- PARAMETROS -->
+                <h4>Parámetros</h4>
+                <table  class="parametros">
+                    <thead>
+                        <tr>
+                            <th>Parámetro</th>
+                            <th>Función</th>
+                            <th>Ejemplo</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>--aññ</td>
+                            <td>Configuración global de nombre de usuario y dirección de correo electrónico.</td>
+                            <td>git config --global user.email <b>"email@gmail.com"<b></td>
+                        </tr>
+                        <tr>
+                            <td>-i</td>
+                            <td>Configuración global de nombre de usuario y dirección de correo electrónico.</td>
+                            <td>git config --global user.email <b>"email@gmail.com"<b></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h1>Inspección y comparación</h1>
+            <h1>Administración</h1>
+            <div class="contenedores-comandos">
+                <h3>clean</h3>
+                <p>Elimina archivos sin seguimiento del árbol de trabajo.</p>
+                <div class="bloque-comando">
+                    <h3>git clean</h3>
+                </div>
+                <!-- PARAMETROS -->
+                <h4>Parámetros</h4>
+                <table  class="parametros">
+                    <thead>
+                        <tr>
+                            <th>Parámetro</th>
+                            <th>Función</th>
+                            <th>Ejemplo</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>-d</td>
+                            <td>Configuración global de nombre de usuario y dirección de correo electrónico.</td>
+                            <td>git config --global user.email <b>"email@gmail.com"<b></td>
+                        </tr>
+                        <tr>
+                            <td>-n</td>
+                            <td>Configuración global de nombre de usuario y dirección de correo electrónico.</td>
+                            <td>git config --global user.email <b>"email@gmail.com"<b></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

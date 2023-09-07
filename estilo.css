@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&family=Inter&family=Josefin+Sans&family=Roboto&family=Rubik&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+/* BLOQUE DEL HEADER */
+.header {
+    background-color: rgb(104, 16, 16);
+    padding: 30px 80px 30px 80px;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header h1 {
+    font-size: 2.35rem;
+    text-transform: uppercase;
+    font-family: 'Rubik', sans-serif;
+}
+
+.header ul {
+    display: flex;
+    list-style: none;
+    gap: 60px;
+    align-items: center;
+}
+
+.header ul li a{
+    font-size: 1.5rem;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    color: #fff;
+}
+
+.header ul li{
+    transition: 0.4s;
+}
+
+.header ul li:hover{
+    transform: translateY(-2px);
+}
+
+/* BLOQUE DEL BANNER */
+.banner {
+    background: url('imagenes/banner.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 90vh;
+}
+
+.contenedor-banner {
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    height: 100%;
+    place-content: center;
+    place-items: center;
+    color: #fff;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contenedor-banner h1 {
+    font-size: 3.8rem;
+    text-transform: uppercase;
+    font-family: 'Inter', sans-serif;
+}
+
+.contenedor-banner a {
+    background: rgb(130, 19, 19);
+    color: #fff;
+    text-decoration: none;
+    padding: 20px;
+    width: 210px;
+    text-align: center;
+    font-size: 1.4rem;
+    border-radius: 6px;
+    font-family: 'Inter', sans-serif;
+    transition: 0.8s;
+}
+
+.contenedor-banner a:hover {
+    background: rgb(171, 24, 24);
+    transform: translateY(-5px);
+}
+
+/* BLOQUE BODY */
+.contenedor-body {
+    display: flex;
+    gap: 50px;
+}
+
+.side-bar {
+    min-width: 320px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding: 50px 40px;
+    background-color: rgb(104, 16, 16);
+    color: #fff;
+}
+
+.side-bar h2 {
+    font-size: 2.05rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+.side-bar ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 0 10px;
+    gap: 20px;
+}
+
+.side-bar ul li a{
+    font-size: 1.15rem;
+    font-family: 'Inter', sans-serif;
+    cursor: pointer;
+    text-decoration: none;
+    color: #fff;
+}
+
+.side-bar ul li {
+    transition: transform 0.6s;
+}
+
+.side-bar ul li:hover {
+    transform: translateX(14px);
+}
+
+.comandos {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+}
+
+.comandos h1 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 3rem;
+    padding-bottom: 20px;
+}
+
+.contenedores-comandos {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-right: 100px;
+    margin-bottom: 150px;
+}
+
+.contenedores-comandos h3 {
+    font-family: 'Rubik', sans-serif;
+    font-size: 2rem;
+    color: #292929;
+}
+
+.contenedores-comandos p {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.15rem;
+}
+
+.bloque-comando{
+    background: #2c2c2c;
+    border-radius: 10px;
+    padding: 30px;
+    max-width: 350px;
+}
+
+.bloque-comando h3 {
+    font-family: 'Inconsolata', monospace;
+    color: #fff;
+    font-size: 1.1rem;
+}
+
+.contenedores-comandos h4 {
+    font-family: 'Rubik', sans-serif;
+    margin-top: 15px;
+    font-size: 1.2rem;
+    color: #1a1a1a;
+}
+
+/* BLOQUE TABLA */
+.parametros {
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 1000px;
+    border-radius: 10px;
+}
+
+.parametros th:first-child{
+    border-radius: 10px 0 0 0;
+}
+
+.parametros th:last-child{
+    border-radius: 0 10px 0 0;
+}
+
+.parametros th, .parametros td {
+    padding: 12px;
+    text-align: left;
+}
+
+.parametros th {
+    background-color: rgb(130, 19, 19);
+    color: #efe4e4;
+    font-family: 'Inter', sans-serif;
+}
+
+.parametros td{
+    font-size: 1.1rem;
+    font-family: 'Inconsolata', monospace;
+    min-width: 130px;
+    border-left: 1px solid rgb(77, 77, 77);
+}
+
+.parametros td:first-child{
+    border: none;
+}
+
+.parametros td:last-child{
+    width: 420px;
+}
+
+.parametros tbody tr:nth-child(even) {
+    background-color: #efefef;
+}
+
+.parametros tbody tr:hover {
+    background-color: #aeaeae;
+}
+
+hr {
+    margin: 60px 0 60px 0;
+}
